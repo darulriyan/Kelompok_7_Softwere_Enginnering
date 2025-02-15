@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 2px 5%;
+    background-color: #FFFFFF;
+    opacity: 0.9;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.logo{
+   display: flex;
+   flex-direction: row;
+   margin-bottom: 30px;
+}
+
+#namalogo{
+    color: #193D64;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 54px;
+    text-decoration: none;
+    list-style: none;    
+}
+
+#gambarlogo {
+    position: relative;
+    width: 83px;
+    height: 74px;
+    top: 20px;
+    right: 15px;
+} 
+
+#gambarlogo1 {
+    position: relative;
+    width: 83px;
+    height: 74px;
+    top: 20px;
+    background-color: #193D64;
+} 
+
+.navbar{
+    display: flex;
+    list-style: none;
+}
+
+.navbar a{
+    font-size: 24px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+    padding: 20px 50px;
+    margin: 0 20px;
+    color: #333333;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar a:hover{
+    color:#193D64;
+    text-decoration: underline;
+}
+
+.open{
+    transition:all 0.5ms;
+    cursor: pointer;
+}
+
+.open:hover{
+    border: 1px solid #000000;
+    border-radius: 6px;
+}
+
+#open{
+    visibility: hidden;
+}
+
+#open img{
+    visibility: visible;
+    cursor: pointer;
+}
+
+#open:checked ~ .close {
+    transform: scale(0);
+    transition:all 0.3s;
+}
+
+.close{
+    width: 300px;
+    height: 200px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: 2px solid #000;
+    position: absolute;
+    top: 95%;
+    left: 95%;
+    transform: translate(-100%, -10%) scale(1);
+    padding: 0 30px 30px;
+    box-shadow: 0 2px 5px rgba(0, 0 , 0, 0.2 );
+}
+
+
+.close h1{
+    font-family: 'Mulish';
+    font-size: 28px;
+    font-weight: 800;
+    color: #000;
+    padding-top: 8px;
+    padding-bottom: 0px;
+    align-items: center;
+    margin-left: 35px;
+    text-decoration: none;
+}
+
+.close h1::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    top: 25%;
+    background-color: black;
+}
+
+.close a{
+    padding-top: 12px;
+    display:flex;
+    font-family: 'Mulish';
+    font-size: 24px;
+    font-weight: 800;
+    color: #000;
+    padding-bottom: 5px;
+    text-decoration-line: underline;
+    margin-left: -15px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.close a:hover{
+    color: #193D64;
+}
+
+
+.fullitem{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.fotoaboutus{
+   display: flex;
+   justify-content: center;
+   padding-top: 200px;
+
+}
+
+.penjelasan{
+    font-family: 'Kanit', sans-serif;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 700px;
+    text-align: center;
+    padding: 80px 30px;
+    border-radius: 29px;
+    background: linear-gradient(180deg, #193D64 56.18%, #27323E 100%); 
+
+}
+
+#tulisan{
+    color: #FFFFFF;
+    background: fixed;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500px;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.visimisi{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.visi{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 600px;
+    text-align: center;
+    padding: 40px 60px;
+    border-radius: 29px;
+    background: linear-gradient(180deg, #FD5D3A 20.24%, #9C402C 83.78%);
+    border: 1px solid #000000;
+    margin:0px 50px 0px 0px;
+}
+
+#judul2{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 65px;
+    color: #FFFFFF;
+    background: fixed;
+}
+
+#memudahkan{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    text-align: left;
+    text-decoration: dotted;
+    font-size: 24px;
+    line-height: 33px;
+    color: #FFFFFF;
+    background: fixed;
+    padding-bottom: 50px;
+}
+
+.misi{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 600px;
+    text-align: center;
+    padding: 40px 60px;
+    background: linear-gradient(180deg, #FD5D3A 20.24%, #9C402C 83.78%);
+    border: 1px solid #000000;
+    border-radius: 29px;
+    margin:0px 0px 0px 50px;
+}
+
+#judul3{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 65px;
+    color: #ffffff;
+    background: fixed;
+}
+
+#merapikan{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    text-align: left;
+    text-decoration: dotted;
+    font-size: 24px;
+    line-height: 33px;
+    color: #FFFFFF;
+    background: fixed;
+    padding-bottom: 60px;
+}
+
+footer{
+    width: 100%;
+    height: 450px;
+    top: 100px;
+    right: 0;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    padding: 70px 5%;
+    background: linear-gradient(180deg, #15314e 0%, #132e4b 25.42%, #112a44 40%, #00244B 99.99%);
+    opacity: 0.9;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    
+}
+
+.footerkiri{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content:space-between;
+    background: fixed;
+}
+
+.namafooter{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding-top: 4px; 
+    background: fixed;
+}
+
+
+#footerlogo{
+    background: fixed;
+}
+
+#namalogo1{ 
+    color: #ffffff;
+    font-family: sans-serif;
+    background: fixed;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 54px;
+    text-decoration: none;
+    list-style: none;
+}
+
+#imagefooter{
+    background: fixed;
+    margin-top: auto;
+}
+
+.textfooter{
+    list-style: none;
+    background: fixed;
+    color: rgb(255, 255, 255);
+    padding-top: 20px;
+    font-family: 'Nunito',sans-serif;
+    transition: 0.3s;
+}
+
+.textfooter:hover{
+    font-weight: bolder;
+}
+
+.containerlogo{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+}
+
+#gambarlogo1{
+    background: fixed;
+    right: 20px;
+}
+
+#imagefooter1{
+    margin-top: auto;
+}
+
+#foot{
+    background:fixed;
+}
+
+#imagefooter{
+    margin-top: auto;
+}
+
+#imagefooter2{
+    margin-top: auto;
+}
+
+.navbar2{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.navbar2 a{
+    font-family: 'Mulish';
+    font-size: 19px;
+    font-weight: 500;
+    margin: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    transition:0.3s;
+}
+
+.navbar2 h2{
+    font-family: 'Mulish';
+    font-size: 15px;
+    font-weight: 300;
+    color: white;
+    margin-top: 80px;
+}
+
+.navbar2 a:hover{
+    font-weight: bolder;
+}
+
+.footerkanan{
+    margin-top: -200px;
+}
+
+.Our{
+    width: 163px;
+    height: 32px;
+    color: #FD5D3A;
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+    font-size: 22px;
+    border-bottom: 1px solid #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: -20px;
+}
+
+.lokasi{
+    display: flex;
+    margin-left: -20px;
+}
+
+.lokasi h1{
+    font-family: 'Mulish';
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    padding-left: 15px;
+    margin-top: 10px;
+
+}
+
+.mapa{
+    margin-bottom: -170px;
+    margin-left: -20px;
+}
+
+#a{
+    margin: 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+ 

@@ -1,0 +1,989 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header{
+    position:fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 2px 5%;
+    background-color: #FFFFFF;
+    opacity: 0.9;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    
+}
+
+.logo{
+   display: flex;
+   flex-direction: row;
+   margin-bottom: 30px;
+}
+
+#namalogo{
+    color: #193D64;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 54px;
+    text-decoration: none;
+    list-style: none;    
+}
+
+ #gambarlogo {
+    position: relative;
+    width: 83px;
+    height: 74px;
+    top: 20px;
+    right: 15px;
+} 
+
+#gambarlogo1 {
+    position: relative;
+    width: 83px;
+    height: 74px;
+    top: 20px;
+    background-color: #193D64;
+} 
+
+.open{
+    transition:all 0.5ms;
+    cursor: pointer;
+}
+
+.open:hover{
+    border: 1px solid #000000;
+    border-radius: 6px;
+}
+
+#open{
+    visibility: hidden;
+}
+
+#open img{
+    visibility: visible;
+    cursor: pointer;
+}
+
+
+#open:checked ~ .close {
+    transform: scale(0);
+    transition: 0.3s;
+}
+
+
+.close{
+    width: 300px;
+    height: 200px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: 2px solid #000;
+    position: absolute;
+    top: 95%;
+    left: 95%;
+    transform: translate(-100%, -10%) scale(1);
+    padding: 0 30px 30px;
+    box-shadow: 0 2px 5px rgba(0, 0 , 0, 0.2 );
+}
+
+
+.close h1{
+    font-family: 'Mulish';
+    font-size: 28px;
+    font-weight: 800;
+    color: #000;
+    padding-top: 8px;
+    padding-bottom: 0px;
+    align-items: center;
+    margin-left: 35px;
+    text-decoration: none;
+}
+
+.close h1::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    top: 25%;
+    background-color: black;
+}
+
+.close a{
+    padding-top: 12px;
+    display:flex;
+    font-family: 'Mulish';
+    font-size: 24px;
+    font-weight: 800;
+    color: #000;
+    padding-bottom: 5px;
+    text-decoration-line: underline;
+    margin-left: -15px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.close a:hover{
+    color: #193D64;
+}
+
+.navbar{
+    display: flex;
+    list-style: none;
+}
+
+.navbar a{
+    font-size: 24px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+    padding: 20px 50px;
+    margin: 0 20px;
+    color: #333333;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar a:hover{
+    color:#193D64;
+    text-decoration: underline;
+}
+
+.body{
+    justify-content: center;
+    position: relative;
+    padding-top: 200px;
+}
+
+.banner{
+    position: relative;
+    padding-bottom: 70px;
+}
+
+.banner h1{
+    font-family: 'Nunito';
+    font-size: 48px;
+    font-weight: 700;
+    color: #193D64;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 25px;
+}
+
+.upload{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.uploadfiles{
+    width: 460px;
+    padding: 30px;
+    background: white;
+    border-radius: 5px;
+}
+
+.uploadfiles form{
+    height:250px;
+    display: flex;
+    margin: 30px 0;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 2px dashed #193D64
+}
+
+form :where(i,p){
+    color:#193D64;
+}
+
+form p{
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+section .row{
+    background: #e7e7e7;
+    margin-bottom: 10px;
+    list-style: none;
+    padding: 20px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section .row i{
+    font-size: 30px;
+    color: #193D64;
+}
+
+section .row .content{
+    width: 100%;
+}
+
+section .row i{
+    font-size: 30px;
+    color: #193D64
+}
+
+section .details span{
+    font-size: 14px;
+}
+
+.progress-area .row .content{
+    width: 100%;
+    margin-left: 15px;
+}
+
+.progress-area .details{
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+    justify-content: space-between;
+}
+
+.progress-area .progress-bar{
+    height: 6px;
+    width: 100%;
+    margin-bottom: 4px;
+    background:white;
+    border-radius: 30px;
+}
+
+.progress-bar .progress{
+    height: 100%;
+    width: 0%;
+    background:#193D64;
+    border-radius: inherit;
+}
+
+.uploaded-area{
+    max-height: 232px;
+    overflow-y: scroll;
+}
+
+.uploaded-area.onprogress{
+    max-height: 150px;
+}
+
+.uploaded-area::-webkit-scrollbar{
+    width: 0px;
+}
+
+.uploaded-area .row .content{
+    display: flex;
+    align-items: center;
+}
+
+.uploaded-area .row .details{
+    display: flex;
+    margin-left: 15px;
+    flex-direction: column;
+}
+
+.uploaded-area .details .size{
+    font-size: 11px;
+    color: #404040;
+}
+
+.upload-area i.fa-check{
+    font-size: 16px;
+}
+
+.yourfiles{
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.yourfiles h1{
+    font-family: 'Nunito';
+    font-size: 48px;
+    font-weight: 700;
+    color: #193D64;
+    text-align: center;
+}
+
+.sizes{
+    position: relative;
+    padding-bottom: 50px;
+    border: 1px solid #193D64;
+    margin-left: 300px;
+    margin-right: 300px;
+    border-radius: 5px;
+    margin-bottom: 100px;
+}
+
+.sizes h1{
+    font-family: 'Kanit';
+    font-size: 22px;
+    font-weight: 400;
+    margin-left: 80px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #193D64;
+}
+
+.sizes .pixel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pixel .button{
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    margin-right: 40px;
+    margin-left: 40px;
+    background-color: #193D64;
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
+    font-family: 'Kanit';
+    font-size: 22px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.pixel .button:hover{
+    background-color: #00244B;
+}
+
+.pixel .button:active{
+    background-color: #00244B;
+    transform: scale(1);
+    box-shadow: 0 0 0 1px #193D64;
+    animation:anim-shadow .3s forwards;
+}
+
+.special{
+    background-color: #00244B;
+}
+
+
+@keyframes anim-shadow{
+    100%{
+        box-shadow: 0 0 10px 1px #193D64;
+    }
+}
+
+.location{
+    position: relative;
+    padding-bottom: 50px;
+    border: 1px solid #193D64;
+    margin-left: 300px;
+    margin-right: 300px;
+    border-radius: 5px;
+    margin-bottom: 100px;
+}
+
+.position img{  
+    margin-left: 70px;
+    border: 2px solid #193D64;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-radius: 5px;
+    width: 475px;
+    height: 345px;
+}
+
+.location h1{
+    font-family: 'Kanit';
+    font-size: 26px;
+    font-weight: 400;
+    margin-left: 80px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #193D64;
+}
+
+.position{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.position h2{
+    font-family: 'Kanit';
+    font-weight: 400;
+    font-size: 45px;
+    color: #193D64;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.position h3{
+    display: inline;
+    font-family: 'Kanit';
+    font-weight: 400;
+    font-size: 26px;
+    color: #193D64;
+    margin-left: 600px;
+    margin-top: -300px;
+    margin-right: 300px;
+}
+
+.position h4{
+    display: inline;
+    font-family: 'Kanit';
+    font-weight: 400;
+    font-size: 45px;
+    color: #FD5D3A;
+    margin-left: 910px;
+    margin-top: -385px;
+}
+
+.position:hover{
+    background-color: #fbd3b7;
+}
+
+.position::-webkit-scrollbar{
+    width: 0px;
+}
+
+.position .but{
+    margin-left: 70px;
+    margin-top: -375px;
+}
+
+.check input[type="radio"]{
+    display: none;
+}
+
+.check span{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 3px solid #193D64;
+    display: block;
+    position: absolute;
+
+}
+
+.check span::after{
+    content: "";
+    height: 30px;
+    width: 30px;
+    background: #193D64;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+    transition: 15ms ease-in-out 0s;
+}
+
+.check input[type="radio"]:checked ~ span::after{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+.delivery{
+    position: relative;
+    padding-bottom: 100px;
+    border: 1px solid #193D64;
+    margin-left: 300px;
+    margin-right: 300px;
+    border-radius: 5px;
+    margin-bottom: 100px;
+}
+
+.delivery h1{
+    font-family: 'Kanit';
+    font-size: 26px;
+    font-weight: 400;
+    margin-left: 80px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #193D64;
+}
+
+.delivery img{
+    margin-left: 250px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    width: 80px;
+    height: 80px;
+}
+
+.delivery h2{
+    font-family: 'Kanit';
+    font-size: 22px;
+    font-weight: 400;
+    margin-left: 255px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #193D64;
+
+}
+
+.delivery h3{
+    font-family: 'Kanit';
+    font-size: 22px;
+    font-weight: 400;
+    margin-left: 545px;
+    margin-top: -53px;
+    margin-bottom: 20px;
+    color: #193D64;
+}
+
+.delivery h4{
+    font-family: 'Kanit';
+    font-size: 22px;
+    font-weight: 400;
+    margin-left: 875px;
+    margin-top: -53px;
+    margin-bottom: 20px;
+    color: #193D64;
+}
+
+.tick input[type="radio"]{
+    display: none;
+    margin-left: 50px;  
+    margin-top: 10px;
+}
+
+.tick2 input[type="radio"]{
+    display: none;
+    margin-left: 50px;  
+    margin-top: 10px;
+}   
+
+.tick3 input[type="radio"]{
+    display: none;
+    margin-left: 50px;  
+    margin-top: 10px;
+}   
+
+.tick span{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 3px solid #193D64;
+    display: block;
+    position: absolute;
+    margin-left: 265px; 
+}
+
+.tick2 span{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 3px solid #193D64;
+    display: block;
+    position: absolute;
+    margin-left: 595px; 
+}
+
+.tick3 span{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 3px solid #193D64;
+    display: block;
+    position: absolute;
+    margin-left: 933px; 
+}
+
+.tick span::after{
+    content: "";
+    height: 30px;
+    width: 30px;
+    background: #193D64;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+    transition: 15ms ease-in-out 0s;
+}
+
+.tick2 span::after{
+    content: "";
+    height: 30px;
+    width: 30px;
+    background: #193D64;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+    transition: 15ms ease-in-out 0s;
+}
+
+.tick3 span::after{
+    content: "";
+    height: 30px;
+    width: 30px;
+    background: #193D64;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+    transition: 15ms ease-in-out 0s;
+}
+
+.tick input[type="radio"]:checked ~ span::after{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.tick2 input[type="radio"]:checked ~ span::after{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.tick3 input[type="radio"]:checked ~ span::after{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.harga{
+    position: relative;
+    padding-bottom: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+    border-radius: 5px;
+}
+
+.harga h1{
+    font-family: 'Kanit';
+    font-size: 26px;
+    font-weight: 400;
+    margin-left: 90px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #193D64;
+}
+
+.harga .quantity{
+    margin: auto;
+    display: flex;
+    margin-left: 60px;
+}
+
+.harga .quantity input{
+    width: 60px;
+    border: 0;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid#193D64;
+    border-radius: 10px;
+    color: #193D64;
+    appearance: none;
+    outline: 0;
+    margin: 0 10px;
+    font-family: 'Kanit';
+}
+
+.harga .quantity img{
+    margin-top: 4px;
+    width: 20px;
+}
+
+.harga .quantity span{
+    display: block;
+    padding: 5px 7px;
+    cursor: pointer;
+    color: #193D64;
+    user-select: none;
+    border-radius: 50%;
+    border: 1px solid #193D64;
+
+}
+
+.harga .price{
+    margin-top: 50px;
+    border: 1px solid #193D64;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.harga h2{
+    font-family: 'Nunito';
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #193D64;
+}
+
+.harga .price span{
+    font-family: 'Nunito';
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-self: right;
+    justify-content: right;
+    margin-bottom: 60px;
+    margin-top: -65px;
+    margin-right: 30px;
+    color: #193D64;
+}
+
+.harga h3{
+    font-family: 'Nunito';
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    color: #193D64;
+}
+
+.harga h4{
+    font-family: 'Nunito';
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    color: #193D64;
+}
+
+.longline {
+    width: 100%;
+    height: 1px;
+    background-color: #193D64;
+    margin-top: -35px;
+    margin-bottom: 50px;
+}
+
+.buatpesan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.buatpesan .pesan{
+    text-align: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    margin-right: 40px;
+    margin-left: 40px;
+    background-color: #193D64;
+    transition: 0.3s;
+    cursor: pointer;
+    font-family: 'Kanit';
+    font-size: 22px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.buatpesan .pesan a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.buatpesan .pesan:hover{
+    background-color: #00244B;
+}
+
+.buatpesan .pesan:active{
+    background-color: #00244B;
+    transform: scale(0.7);
+    box-shadow: 0 0 0 1px #193D64;
+    animation:anim-shadow .3s forwards;
+}
+
+@keyframes anim-shadow{
+    100%{
+        box-shadow: 0 0 10px 1px #193D64;
+    }
+}
+
+
+
+
+footer{
+    width: 100%;
+    height: 450px;
+    top: 100px;
+    right: 0;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    padding: 70px 5%;
+    background: linear-gradient(180deg, #15314e 0%, #132e4b 25.42%, #112a44 40%, #00244B 99.99%);
+    opacity: 0.9;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    
+}
+
+.footerkiri{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content:space-between;
+    background: fixed;
+}
+
+.namafooter{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding-top: 4px; 
+    background: fixed;
+}
+
+
+#footerlogo{
+    background: fixed;
+}
+
+#namalogo1{ 
+    color: #ffffff;
+    font-family: sans-serif;
+    background: fixed;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 54px;
+    text-decoration: none;
+    list-style: none;
+}
+
+#imagefooter{
+    background: fixed;
+    margin-top: auto;
+}
+
+.textfooter{
+    list-style: none;
+    background: fixed;
+    color: rgb(255, 255, 255);
+    padding-top: 20px;
+    font-family: 'Nunito',sans-serif;
+    transition: 0.3s;
+}
+
+.textfooter:hover{
+    font-weight: bolder;
+}
+
+.containerlogo{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+}
+
+#gambarlogo1{
+    background: fixed;
+    right: 20px;
+}
+
+#imagefooter1{
+    margin-top: auto;
+}
+
+#foot{
+    background:fixed;
+}
+
+#imagefooter{
+    margin-top: auto;
+}
+
+#imagefooter2{
+    margin-top: auto;
+}
+
+.navbar2{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.navbar2 a{
+    font-family: 'Mulish';
+    font-size: 19px;
+    font-weight: 500;
+    margin: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    transition:0.3s;
+}
+
+.navbar2 h2{
+    font-family: 'Mulish';
+    font-size: 15px;
+    font-weight: 300;
+    color: white;
+    margin-top: 80px;
+}
+
+.navbar2 a:hover{
+    font-weight: bolder;
+}
+
+.footerkanan{
+    margin-top: -200px;
+}
+
+.Our{
+    width: 163px;
+    height: 32px;
+    color: #FD5D3A;
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+    font-size: 22px;
+    border-bottom: 1px solid #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: -20px;
+}
+
+.lokasi{
+    display: flex;
+    margin-left: -20px;
+}
+
+.lokasi h1{
+    font-family: 'Mulish';
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    padding-left: 15px;
+    margin-top: 10px;
+
+}
+
+.mapa{
+    margin-bottom: -170px;
+    margin-left: -20px;
+}
+
+#a{
+    margin: 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+ 
